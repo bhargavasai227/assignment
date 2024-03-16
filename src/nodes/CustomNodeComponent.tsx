@@ -5,7 +5,7 @@ import { Handle, Position } from 'reactflow';
 interface NodeData {
 
   label: string;
-  imge:string;
+  imge?:string;
   clr:string;
   
 }

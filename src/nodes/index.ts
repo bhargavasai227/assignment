@@ -1,12 +1,18 @@
 import type { Node, NodeTypes } from "reactflow";
 import CustomNodeComponent from "./CustomNodeComponent";
 const x=-700;
-export const initialNodes = [
+interface NodeData {
+  clr: string; 
+  label: string; 
+  imge?: string; 
+}
+const initialNodes: Node<NodeData, string | undefined>[] = [
   { 
     id: "a", 
     type: 'custom',
     position: { x: -1000, y: 300 }, 
-    data: { 
+    data: {
+      clr:"white",
       label: "root",
       
     } 
@@ -205,8 +211,8 @@ export const initialNodes = [
   
 ] satisfies Node[];
 
-export const nodeTypes = {
- 
-  "custom":CustomNodeComponent,
+const nodeTypes: NodeTypes = {
+  custom: CustomNodeComponent,
+};
 
-} satisfies NodeTypes;
+export { initialNodes, nodeTypes };
