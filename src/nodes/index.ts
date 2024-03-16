@@ -16,6 +16,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x, y: 120 },
     data: { 
+      clr:"#2a4494",
       label: "Research",
       
     },
@@ -25,6 +26,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x, y: 220 }, 
     data: { 
+      clr:"#82b3e8",
       label: "Planning",
       
     } 
@@ -34,6 +36,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x, y: 320 },
     data: { 
+      clr:"#e96343",
       label: "Designing",
       
     },
@@ -43,6 +46,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x, y: 420 },
     data: { 
+      clr:"#e8919d",
       label: "Manufacturing"
     },
     
@@ -52,6 +56,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x, y: 520 },
     data: { 
+      clr:"#a684eb",
       label: "Sales/Marketing"
     },
     
@@ -61,6 +66,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+200, y: 100 },
     data: { 
+      clr:"#2a4494",
       label: "External"
     },
   },
@@ -69,7 +75,8 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+200, y: 150 },
     data: { 
-      label: "Internal"
+      clr:"#2a4494",
+      label:"Internal"
     },
   },
   {
@@ -77,6 +84,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+200, y: 200 },
     data: { 
+      clr:"#82b3e8",
       label: "PRD"
     },
   },
@@ -85,6 +93,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+200, y: 250},
     data: { 
+      clr:"#82b3e8",
       label: "Specs"
     },
   },
@@ -93,6 +102,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+200, y: 300},
     data: { 
+      clr:"#e96343",
       label: "Hardware"
     },
   },
@@ -101,6 +111,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+200, y: 350},
     data: { 
+      clr:"#e96343",
       label: "Software"
     },
   },
@@ -109,6 +120,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+200, y: 400},
     data: { 
+      clr:"#e8919d",
       label: "Material"
     },
   },
@@ -117,6 +129,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+200, y: 450},
     data: { 
+      clr:"#e8919d",
       label: "Production"
     },
   },{
@@ -124,6 +137,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+200, y: 500},
     data: { 
+      clr:"#a684eb",
       label: "Online"
     },
   },{
@@ -131,6 +145,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+200, y: 550},
     data: { 
+      clr:"#a684eb",
       label: "Dealship"
     },
   },
@@ -139,6 +154,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+500, y: 50},
     data: { 
+      clr:"#2a4494",
       label: "B2C"
     },
   },{
@@ -146,6 +162,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+500, y: 150},
     data: { 
+      clr:"#2a4494",
       label: "B2C"
     },
   },
@@ -154,6 +171,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+700, y: 0},
     data: { 
+      clr:"#2a4494",
       label: "Online"
     },
   },{
@@ -161,6 +179,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+700, y: 50},
     data: { 
+      clr:"#2a4494",
       label: "Interview"
     },
   },
@@ -169,6 +188,7 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+700, y: 100},
     data: { 
+      clr:"#2a4494",
       label: "Health"
     },
   },
@@ -177,7 +197,9 @@ export const initialNodes = [
     type: 'custom',
     position: { x: x+1000, y: 50},
     data: { 
-      label: "hi"
+      clr:"white",
+      imge:"https://29b2eb86d7.clvaw-cdnwnd.com/18b93d4bb4f77ddec8c75f8adc4f29dc/200001415-8488a8488c/FullStack-Assignemt.png?ph=29b2eb86d7",
+      label: "Hover"
     },
   },
   

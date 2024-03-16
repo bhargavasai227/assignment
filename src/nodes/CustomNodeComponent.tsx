@@ -3,8 +3,10 @@ import { Handle, Position } from 'reactflow';
 
 
 interface NodeData {
+
   label: string;
-  handlers?: { left: boolean; right: boolean; };
+  imge:string;
+  clr:string;
   
 }
 
@@ -22,7 +24,7 @@ const CustomNodeComponent: React.FC<CustomNodeComponentProps> = ({ data, onNodeD
     }
   };
   
-const imageUrl="https://29b2eb86d7.clvaw-cdnwnd.com/18b93d4bb4f77ddec8c75f8adc4f29dc/200001415-8488a8488c/FullStack-Assignemt.png?ph=29b2eb86d7";
+const imageUrl=data.imge;
   const handleMouseEnter = () => setIsHovering(true);
   const handleMouseLeave = () => setIsHovering(false);
   const handleNodeDoubleClick = () => {
@@ -39,22 +41,23 @@ const imageUrl="https://29b2eb86d7.clvaw-cdnwnd.com/18b93d4bb4f77ddec8c75f8adc4f
       onDoubleClick={handleNodeDoubleClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      style={{backgroundColor:data.clr}}
     >
       <div>{data.label}</div>
-      <img
+      {data.imge&&<img
         src={imageUrl}
         alt="Hover image"
         className="hover-image" 
         style={{
           position: 'absolute',
-          top: -50,
+          top: 100,
           left: 0,
-          width: '5vw',
-          height: '2wh',
+          width: '10vw',
+          height: '5wh',
           opacity: isHovering ? 1 : 0, 
           transition: 'opacity 0.2s ease-in-out', 
         }}
-      />
+      />}
         <Handle type="target" position={Position.Left} />
         <Handle type="source" position={Position.Right} />
       
